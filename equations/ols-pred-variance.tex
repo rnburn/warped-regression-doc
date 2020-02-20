@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+E &\left[\left(\varepsilon' - x'^T \left(X^T X\right)^{-1} X^T \varepsilon\right)^2\right] \\
+&= E\left[\varepsilon'^2 
+- x'^T \left(X^T X\right)^{-1} X^T \varepsilon \varepsilon'
++ x'^T \left(X^T X \right)^{-1} X^T \varepsilon \varepsilon^T X \left(X^T X \right)^{-1} x'
+\right] \\
+&= \sigma^2 + x'^T \left(X^T X\right)^{-1} X^T \left(\sigma^2 I\right) X \left(X^T X\right)^{-1} x' \\
+&= \sigma^2 + \sigma^2 x'^T \left(X^T X\right)^{-1} x' \\
+&= \sigma^2 \left[ 1 + x'^T \left(X^T X\right)^{-1} x' \right] \\
+\end{split}\end{align*}
+\end{document}

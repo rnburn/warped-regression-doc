@@ -1,0 +1,14 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\frac{\partial L}{\partial \psi_j} &= 
+-\frac{n}{2} \frac{1}{\lVert A z \rVert^2} \left( 2 z^T A \frac{\partial z}{\partial \psi_j} \right) +
+\sum_i \frac{1}{f'\left(y_i;\psi\right)} \left(\frac{\partial f'\left(y_i;\psi\right)}{\partial \psi_j}\right) \\
+&= -\frac{n}{\lVert A z \rVert^2}\left(z^T A \frac{\partial z}{\partial \psi_j}\right) +
+\sum_i \frac{1}{f'\left(y_i;\psi\right)} \left(\frac{\partial f'\left(y_i;\psi\right)}{\partial \psi_j}\right) \\
+\end{split}\end{align*}
+\end{document}

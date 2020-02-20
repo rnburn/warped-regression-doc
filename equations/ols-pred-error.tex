@@ -1,0 +1,15 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+e' &= y' - x'^T \hat{b} \\
+   &= x'^T b + \varepsilon' - x'^T\hat{b} \\
+   &= x'^T \left(b - \hat{b}\right) + \varepsilon' \\
+   &= x'^T \left( \left(X^T X\right)^{-1} X^T X b - \left(X^T X\right)^{-1} X^T y\right) + \varepsilon' \\
+   &= x'^T \left(X^T X\right)^{-1} X^T \left(X b - y\right) + \varepsilon' \\
+   &= \varepsilon' - x'^T \left( X^T X \right)^{-1} X^T \varepsilon \\
+\end{split}\end{align*}
+\end{document}
